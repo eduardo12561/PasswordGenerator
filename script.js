@@ -30,7 +30,7 @@ function getSymbol() {
 }
 
 function generatePassword() {
-    generateEl.addEventListener("click", generatePassword);
+ 
     const len = lenEl.value;
 
     let password = "";
@@ -82,7 +82,7 @@ function generateX() {
     return xs[Math.floor(Math.random() * xs.length)];
 }
 
-
+generateEl.addEventListener("click", generatePassword);
 
 copyEl.addEventListener("click", () => {
     const textarea = document.createElement("textarea");
